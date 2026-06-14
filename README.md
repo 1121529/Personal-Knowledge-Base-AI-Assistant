@@ -1,1 +1,1 @@
-# -AI-
+# Personal Knowledge Base AI Assistant
