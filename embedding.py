@@ -19,7 +19,7 @@ class EmbeddingService:
 
     def __init__(
         self,
-        model_name="BAAI/bge-small-zh-v1.5"
+        model_name="BAAI/bge-m3"
     ):
         """
         初始化 Embedding Model
