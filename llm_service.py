@@ -21,14 +21,20 @@ class LLMService:
                     "content": prompt
                 }
             ],
-            "stream": False
+            "stream": False,
+            "options": {
+                "num_predict": 4000,  # 原本可能是 2048 或更低
+                                  # 改為 4000 允許更長的回答
+                "temperature": 0.7,
+                "top_p": 0.95
+            }
         }
 
         try:
             response = requests.post(
                 self.base_url,
                 json=payload,
-                timeout=600
+                timeout=1200
             )
 
             response.raise_for_status()
