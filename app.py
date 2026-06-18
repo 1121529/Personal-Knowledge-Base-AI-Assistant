@@ -852,7 +852,7 @@ if build_button:
             st.session_state.vector_ready = True
 
         st.session_state.build_success_message = (
-            f"資料庫更新完成，新增 {added_count} 個 Chunk"
+            f"資料庫更新完成"
         )
 
         st.session_state.uploader_key += 1
